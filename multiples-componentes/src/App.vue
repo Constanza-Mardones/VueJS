@@ -1,22 +1,23 @@
 <template>
   <div id="app">
-    <img src="https://s3.amazonaws.com/tinycards/image/3e1981962fc8640613f87ed88fd217cb" width="200">
-    <HelloWorld msg="Lista de Elementos"/>
-    <h2>Subtitulo Lista...</h2>
-    <lista></lista>
+    <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld msg="Listas"/>
+    <lista texto="Lista n° 1"/>
+    <lista texto="Lista n° 2"/>
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-import Lista from './components/Lista.vue'
-export default {
+ import HelloWorld from './components/HelloWorld.vue'
+ import Lista from './components/Lista.vue'
+ export default {
   name: 'App',
   components: {
     HelloWorld,
     Lista
   }
-}
+ }
 </script>
 
 <style>
