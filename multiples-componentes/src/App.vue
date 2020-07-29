@@ -1,10 +1,14 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Listas"/>
-    <lista texto="Lista n° 1"/>
-    <lista texto="Lista n° 2"/>
-    
+    <HelloWorld texto="Listas"/> 
+    <Lista v-for="(contenido, index) in mensajes" v-bind:msg="contenido" v-bind:key="index"/>
+    <HelloWorld otrotexto="N°1"/>
+    <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
+    <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
+    <HelloWorld otrotexto="N°2"/>
+    <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
+    <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-eslint" target="_blank" rel="noopener">eslint</a></li>
   </div>
 </template>
 
@@ -16,8 +20,13 @@
   components: {
     HelloWorld,
     Lista
+  },
+  data(){
+    return{
+      mensajes:['mensaje1', 'mensaje2']
+    };
   }
- }
+ };
 </script>
 
 <style>
