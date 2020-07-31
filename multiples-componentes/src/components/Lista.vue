@@ -1,17 +1,24 @@
 <template>
-<div class="Lista">
+<div class="List">   
   <ul>
-    <li>{{contenido}}</li>
+    <li v-for="(contenido, index) in mensajes" :msg="contenido" :key="index">
+    {{contenido}}
+    </li>
   </ul>
-</div>
+</div>  
 </template>
 
 <script>
 export default{
- name:'Lista',	
+ name:'Lists',	
  props:{
-    contenido: String
- }	
+    contenido:String
+ },
+ data(){
+    return{
+      mensajes:['Texto', 'Texto1', 'Texto2']
+    };
+  }	
 };
 </script>
 <style>
