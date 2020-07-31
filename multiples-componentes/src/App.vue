@@ -5,7 +5,7 @@
     <HelloWorld otrotexto="N°1"/>
     <Lista contenido=""/>
     <HelloWorld otrotexto="N°2"/>
-    <Lista contenido2=""/>
+    <Lista contenido=""/>
   </div>
 </template>
 
