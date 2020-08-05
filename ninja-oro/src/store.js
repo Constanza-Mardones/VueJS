@@ -10,11 +10,11 @@ export default {
         this.state.resultado= azar;
     },
     actividadesClick(nombre){
+        let x= new Date();
         if (this.state.resultado < 0) {
-            this.state.informacion =[...this.state.informacion, "Has Perdido "+this.state.resultado+" de Oro en: "+nombre];
+            this.state.informacion =[...this.state.informacion, "Has Perdido "+this.state.resultado+" de Oro en: "+nombre + ' ' +(x.getDate() + "/" + (x.getMonth() +1) + "/" + x.getFullYear())];
         }
         else{
-            this.state.informacion =[...this.state.informacion, "Has Ganado "+this.state.resultado+" de Oro en: "+nombre];
         }
     }
 };
