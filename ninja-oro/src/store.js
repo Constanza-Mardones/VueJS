@@ -15,6 +15,7 @@ export default {
             this.state.informacion =[...this.state.informacion, "Has Perdido "+this.state.resultado+" de Oro en: "+nombre + ' ' +(x.getDate() + "/" + (x.getMonth() +1) + "/" + x.getFullYear())];
         }
         else{
+            this.state.informacion =[...this.state.informacion, "Has Ganado "+this.state.resultado+" de Oro en: "+nombre + ' '+(x.getDate() + "/" + (x.getMonth() +1) + "/" + x.getFullYear())];
         }
     }
 };
