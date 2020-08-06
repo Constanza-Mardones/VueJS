@@ -29,16 +29,15 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #d8b108;
-  margin-top:50px;
-}
-.lugares{
-  margin-top: 20px;
-}
-
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #d8b108;
+    margin-top:50px;
+  }
+  .lugares{
+    margin-top: 20px;
+  }
 </style>

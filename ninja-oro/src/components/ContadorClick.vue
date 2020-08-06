@@ -1,7 +1,9 @@
 <template>
   <div id="hi">
     <div class="oro">
-      <h2>Tu oro: {{timesClicked}}</h2>
+      <!-- elercicio de ninja-oro estilos condicionales -->
+      <h2 v-bind:class="{ verde: timesClicked > 0, rojo: timesClicked < 0 }">
+      Tu oro: {{timesClicked}} </h2>
     </div>
     <div class="estacion1">
       <h3>Granja</h3>
@@ -80,5 +82,12 @@ h3{
   height: 180px;
   padding: 10px;
   margin-left: 20px;
+}
+.verde {
+  color: green;
+}
+  
+.rojo {
+  color: red;
 }
 </style>
