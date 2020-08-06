@@ -9,6 +9,10 @@
             </li>  
         </ul>
       </div>
+      <!-- ejercicio ninja-oro reset -->
+      <div class="boton">
+        <button v-on:click="reinicio()">Reiniciar</button>
+      </div>
   </div> 
 </template>
 
@@ -19,9 +23,17 @@ export default {
     message: Array
   },
   data(){
-      return{
-          texto:[]
-      };
+    return{
+      texto:[]
+    };
+  },
+  //ejercicio ninja-oror reset
+  methods:{
+    reinicio: function() {
+     if (window.confirm('¿Estas seguro de reiniciar el juego? tu progreso se perdera')){
+        window.open("exit.html", "Thanks for Visiting!");
+      } 
+    }
   }
 };
 </script>
@@ -43,5 +55,9 @@ h4{
   display: inline-block;
   vertical-align: center;
   margin-left: 20px;
+}
+.boton{
+  display: block;
+  margin-top: 20px;
 }
 </style>
