@@ -1,11 +1,10 @@
 <template>
   <div class="hi">
     <!-- <button v-on:click="mostrarNinja()" > Mostrar Ninja </button> -->
-    <button v-on:click="alertar(texto)" @click="mostrarNinja()"> Mostrar Ninja </button>
+    <button v-on:click="alertar()" @click="mostrarNinja()"> Mostrar Ninja </button>
     <!-- <button v-on:click="mostrarGato()"> Mostrar Gato </button> -->
     <button v-on:click="alertar()" @click="mostrarGato()"> Mostrar Gato </button>
    <img :src='image' />
-    
   </div>
 </template>
 
