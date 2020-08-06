@@ -2,7 +2,9 @@
   <div id="act">
       <h4>Actividades:</h4>
       <div class="cuadro">
-          {{message}}
+        <ul>
+          <li v-bind:class="{ verde: message > 0, rojo: message < 0 }"> {{message}} </li>
+        </ul>  
       </div>
       <!-- ejercicio ninja-oro reset -->
       <div class="boton">
@@ -16,11 +18,6 @@ export default {
   name: 'Actividades',
   props: {
     message: Array
-  },
-  data(){
-    return{
-      texto:[]
-    };
   },
   //ejercicio ninja-oror reset
   methods:{
@@ -54,5 +51,15 @@ export default {
   .boton{
     display: block;
     margin-top: 20px;
+  }
+  li{
+   list-style-type: none;
+  }
+  .verde {
+    color: green;
+  }
+  
+  .rojo {
+    color: red;
   }
 </style>
