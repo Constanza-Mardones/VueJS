@@ -3,7 +3,7 @@
       <h4>Actividades:</h4>
       <div class="cuadro">
         <ul>
-          <li v-bind:class="{ verde: message > 0, rojo: message < 0 }"> {{message}} </li>
+          <li v-bind:class="{ verde: message > 0, rojo: message < 0 }"> {{message}}</li>
         </ul>  
       </div>
       <!-- ejercicio ninja-oro reset -->
@@ -17,7 +17,7 @@
 export default {
   name: 'Actividades',
   props: {
-    message: Array
+    message: []
   },
   //ejercicio ninja-oror reset
   methods:{
@@ -54,6 +54,7 @@ export default {
   }
   li{
    list-style-type: none;
+   white-space: pre-line;
   }
   .verde {
     color: green;
