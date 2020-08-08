@@ -1,5 +1,5 @@
 <template>
-    <div id="contenido">
+    <div id="contenido"> 
         <a href="http://localhost:8080/#/">primero</a>
         <a href="http://localhost:8080/#/segundo">segundo</a>
         <a href="http://localhost:8080/#/tercero">tercero</a>

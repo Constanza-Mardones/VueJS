@@ -20,7 +20,7 @@ export default new VueRouter({
         },
         {
             path:'/tercero',
-            component: Tercero
+            component: Tercero,
         },
         {
             path:'/cuarto',
@@ -28,8 +28,7 @@ export default new VueRouter({
         },
         {
             path: '/error',
-            component: HelloWorld,
-            alias:'404'
+            component: HelloWorld
         }
     ]
 })

@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <img src="https://lh3.googleusercontent.com/proxy/jdO3Cg4pceSp4aY35Mezo_LnMzc6MiyvAUabDzO6KxUei8tHS6d8Jn31hwmpGQPTwvwD0sFdl1IIceeGyENi6nxYuN4Lihtebzs" width="600">
+    <img src="https://www.adslzone.net/app/uploads-adslzone.net/2016/08/error-404.jpg" width="600">
   </div>
 </template>
 
