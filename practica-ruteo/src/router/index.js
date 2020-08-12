@@ -27,7 +27,7 @@ export default new VueRouter({
             component: Cuarto
         },
         {
-            path: '/error',
+            path: '*',
             component: HelloWorld
         }
     ]
