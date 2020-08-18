@@ -3,7 +3,8 @@
     <img src="https://www.bolsamania.com/mejoresprestamos/wp-content/uploads/2014/01/PRESTAMOS9-300x246.png" width="200">
     <h1>Peliculas</h1>
     <div id="nav">
-      <router-link to="/">Acción</router-link> |
+      <router-link to="/">Inicio</router-link> |
+      <router-link to="/home">Acción</router-link> |
       <router-link to="/about">Familiar</router-link> |
       <router-link to="/comedy">Comedia</router-link>
     </div>
