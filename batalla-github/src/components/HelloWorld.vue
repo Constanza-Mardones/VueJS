@@ -1,7 +1,7 @@
 <template>
   <div id="hello">
-    <h1>Welcome to GitHub Battle</h1>
-    <p>Look up by id: <input v-model="nombre" placeholder="nombre de usuario"/><button @click="updateResults">Buscar</button></p>
+    <h1>GitHub Battle</h1>
+    <p>Nombre de Usuario <input v-model="nombre"/><button @click="updateResults">Buscar</button></p>
     <div v-if="info != null" class='cuadro'>
       <h2>Player 1</h2>
       <p>Username: {{ info.login }}</p>
