@@ -4,7 +4,7 @@
       <Close/>
     </div>  
     <h3>Bienvenido!</h3>
-    <SecretComp/>
+    <SecretComp :comentarios="coment"/>
   </div>
 </template>
 <script>
@@ -16,7 +16,10 @@ export default {
   components: {
     SecretComp,
     Close
-  }
+  },
+  data() {
+    return this.$store.state;
+  },
 }
 </script>
 <style>

@@ -2,7 +2,6 @@
     <b-container>
         <div class="registro">
             <h1>Crear Cuenta</h1><br>
-            <!-- <h3>{{user.displayName}}</h3> -->
             <b-row class="ml-5 mt-2">
                 <b-col sm="4">
                     <label for="input-small">Nombre: </label>
@@ -51,18 +50,12 @@ export default {
         async registroUser() {
             try{
                 this.cargando = true;
-                await firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
-                .then(user =>{
-                    if(user){
-                        user.updateProfile({ displayName: this.nombre })
-                    }
-                    console.log(user);
-                })
-                
-                this.cargando = false;
+                const user = firebase.auth().createUserWithEmailAndPassword(this.email, this.password)
+                console.log(user);
+                this.cargando = false
                 this.$router.replace({name:"secret"});
-            }
-            catch (error) {
+           }
+           catch (error) {
                 console.log(error);
             }
         }

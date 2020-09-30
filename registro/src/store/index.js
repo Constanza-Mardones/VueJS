@@ -1,47 +1,29 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
-import {db} from '../firebase'
+import Vue from 'vue'
+import Vuex from 'vuex'
 
-Vue.use(Vuex);
-console.log(db);
+Vue.use(Vuex)
+
 export default new Vuex.Store({
   state: {
-    user:{
-      loginIn: false,
-      data: null
-    },
+    coment: [],
   },
-  getters:{
-    user (state){
-      return state.user
-    }
-  },
-  mutations:{
-    SET_LOGGED_IN(state, value){
-      state.user.loggedIn = value 
+  mutations: {
+    newPost(datos){
+      console.log(datos);
+      this.state.coment.push({
+        usuario: datos.user,
+        texto: datos.text,
+        fecha: new Date(),
+        like: 0,
+      })
+      console.log(this.state.coment);
     },
-    SET_USER(state, data){
-      state.user.data = data
-    },
-    SET_POSTS(state, pos){
-      state.postsx = pos
+    aumentarLike(id){
+      console.log("aumentando")
+      this.state.coment[id].like++;
     }
   },
   actions: {
-    fetchUser({commit},user){
-      commit('SET_LOGGED_IN',user!==null)
-      if(user){
-        commit('SET_USER', {
-          displayName: user.displayName,
-          email: user.email
-        })
-      }else{
-        commit('SET_USER', null)
-      }
-    },
-    getPosts({commit}, ps){
-      commit('SET_POSTS',ps)
-    }
   },
   modules: {
   }
