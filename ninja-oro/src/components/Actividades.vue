@@ -23,7 +23,7 @@ export default {
   methods:{
     reinicio: function() {
      if (window.confirm('¿Estas seguro de reiniciar el juego? tu progreso se perdera')){
-        window.open("exit.html", "Thanks for Visiting!");
+        location.reload()("gracias por la visita");
       } 
     }
   }
@@ -47,6 +47,7 @@ export default {
     display: inline-block;
     vertical-align: center;
     margin-left: 20px;
+    overflow : auto;
   }
   .boton{
     display: block;

@@ -22,8 +22,8 @@
     </div>
     <div class="estacion4">
       <h3>Casino</h3>
-      <p>Diviertete en el casino apostando tu Oro</p>
-      <button v-on:click="respuestaClick1(-50, 50, 'Casino')">Buscar Oro</button>
+      <p>Diviertete en el casino y apuesta tu Oro</p>
+      <button v-on:click="respuestaClick1(-50, 50, 'Casino')">Apostar Oro</button>
     </div>
   </div>
 </template>
