@@ -95,21 +95,7 @@ export default {
       this.Emisión=[];
       this.Géneros="";
       this.Imagen="";
-    },
-    // async viewOne() {
-    //   try {
-    //     let oneShow = await db.collection("series").doc(this.Id).get();
-    //     // once retrieved, the id is at the document level
-    //     console.log(oneShow);
-    //     // and the contents of the document are available via data()
-    //     let showDetails = oneShow.data();
-    //     console.log(showDetails.form.Nombre);
-    //     console.log(showDetails.form.Canal);
-    //   }
-    //   catch (error) {
-    //     console.log(error);
-    //   }
-    // },
+    }
   }
 }
 </script>
