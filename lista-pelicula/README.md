@@ -1,5 +1,7 @@
 # lista-pelicula
 
+acceso servidor heroku https://proyectejemplo.herokuapp.com/#/
+
 ## Project setup
 ```
 npm install
